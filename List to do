@@ -1,0 +1,22 @@
+by @Nautilus567
+
+Principal features
+
+Modularity for the code to improve development
+Game.py should have the code to start the game, load and save games and the backbone to run plays and boards
+Boards.py should have the code to access different stories and/or stages
+helpers.py should have code that works in all the files
+Char.py should have the code of the Char class and the subclasses NPC and Player
+Save/Load module that should save the actual status of the game and load it
+
+Other features should be added as the dev continues
+
+Functions that should be written
+
+For the helper file
+    roll_dice   [X] : To roll the dice
+    effect      [X] : To know if dice score is enough to execute successfully the action
+
+
+
+

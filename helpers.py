@@ -11,6 +11,9 @@ def roll_dice(diceType, force):
 
     Takes: Dice type(int) and force (int)
     Returns: Result form the roll (int)
+    :type force: int
+    :type diceType: int
+
     """
     for times in range(force):
         roll = random.randint(1, diceType)
