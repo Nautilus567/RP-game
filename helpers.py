@@ -59,3 +59,20 @@ def effect(score, threshold, diceType):
     else:
         return 'Success'
 
+
+def choose(options):
+    """
+    Helper function that presents the string part of the tuple stored on a list
+    :param options: List with tuples inside, made of a string and 2 integers
+    :return: User input moved by ONE form the list index
+    """
+    assert type(options) == list, "ERROR, unable to load options"
+    print("Please make your choice")
+    print()
+    for option in options:
+        number = options.index(option) + 1
+        print(str(number) + '.-', option[0])
+        print()
+    user = input()
+    return user
+

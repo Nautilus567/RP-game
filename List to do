@@ -14,8 +14,20 @@ Other features should be added as the dev continues
 Functions that should be written
 
 For the helper file
-    roll_dice   [X] : To roll the dice
-    effect      [X] : To know if dice score is enough to execute successfully the action
+    roll_dice       [X] : To roll the dice
+    effect          [X] : To know if dice score is enough to execute successfully the action
+    choose          [X] : To load the options form the stage turn and print them into the screen
+    player_status   [ ] : Prints player HP, name, turn number and the played time from the current save class instance
+
+Save/Load module
+    Save class      [ ] :
+        Holds the information form the match
+
+    Save_game       [ ] : Saves the current save class instance and writes it into a file as petition of the user
+    Load_game       [ ] : Loads the save file returning the save class instance
+    Quick_save      [ ] : Saves into the current save class instance the game progress and player status
+
+
 
 
 
