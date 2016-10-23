@@ -20,10 +20,11 @@ For the helper file
     player_status   [ ] : Prints player HP, name, turn number and the played time from the current save class instance
 
 Save/Load module
-    Save class      [ ] :
-        Holds the information form the match
+    Save class      [-] :
+        Holds the information form the play
+        Need to figure how to measure the time played in units of hours and minutes
 
-    Save_game       [ ] : Saves the current save class instance and writes it into a file as petition of the user
+    Save_game       [-] : Saves the current save class instance and writes it into a file as petition of the user
     Load_game       [ ] : Loads the save file returning the save class instance
     Quick_save      [ ] : Saves into the current save class instance the game progress and player status
 

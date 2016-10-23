@@ -2,6 +2,7 @@ import random
 import time
 
 
+
 def roll_dice(diceType, force):
     """
 
@@ -75,4 +76,54 @@ def choose(options):
         print()
     user = input()
     return user
+
+
+class Save(object):
+    """
+    Class for the save file object, this will store the current status of the running game
+    """
+    def __init__(self,Player,HP,Turn,Playtime):
+        self.Player = Player
+        self.HP = HP
+        self.Turn = Turn
+        self.StartTime = time.time()
+        self.Playtime = Playtime
+        self.SaveTime = time.strftime('%B %C %Y %H:%M:%S')
+    # Getters
+    def getPlayer(self):
+        return self.Player
+
+    def getHP(self):
+        return self.HP
+
+    def getTurn(self):
+       return self.Turn
+
+    def getPlayTime(self):
+        return self.Playtime
+
+    def getSaveTime(self):
+        return self.SaveTime
+
+    def getStarTime(self):
+        return time.strftime('%B %C %Y %H:%M:%S', self.startTime)
+
+    # Updaters
+
+    def updateHP(self,newHP):
+        self.HP = NewHP
+
+    def updateTurn(self):
+        self.Turn += 1
+
+    def updatePlaytime(self):
+        pass
+
+    def updateSaveTime(self):
+        self.SaveTime = time.strftime('%B %C %Y %H:%M:%S')
+
+
+
+def SaveGame(Player, HP, Turn, Playtime):
+    pass
 
